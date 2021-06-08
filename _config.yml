@@ -1,22 +1,20 @@
 # Site settings
-title: Klise Theme # site title
+title: Luke's blog # site title
 description: >- # site description
-  He's writing in Bahasa about web technology and experience as a journal 
-  for documentation things that he learned, meet him <a href="https://github.com/piharpi" target="_blank" rel="noopener">@github</a>.
-lang: en-US # default lang
-timezone: Asia/Jakarta # set your timezone
+ Just another study blog.
+lang: en # default lang
+timezone: Brasil/Brasília # set your timezone
 image: assets/img/ogp.png # This image used for Open Graph more info https://ogp.me/
 repo: https://github.com/piharpi/jekyll-klise # site repo [optional]
 mode: dark # default theme "dark" | "light"
 
 # Profile settings
 author:
-  name: Jekyll Klisé # author name
+  name: The dev # author name
   bio: >- # tell to the world
-    The minimalist Jekyll theme, light and dark mode support, for running a personal site and blog, 
-    meet Klisé theme at <a href="https://github.com/piharpi/jekyll-klise" target="_blank" rel="noopener">@github</a>.
-  username: username # general username
-  github: github_username # github username
+     Just blog to share some things about my studies and things i guess interessent
+  username: The dev # general username
+  github: lucasribeiro-dev # github username
   twitter: twitter_username # twitter username
   facebook: facebook_username # facebook username
   email: your-email@email.com # email adress
@@ -48,7 +46,7 @@ defaults:
       layout: post
       comments: false
 
-# Jekyll Compose default front matter
+      # Jekyll Compose default front matter
 jekyll_compose:
   post_default_front_matter:
     modified:

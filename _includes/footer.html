@@ -1,6 +1,20 @@
 <footer class="footer">
-  <a class="footer_item" href="/thanks">ack.</a>
-  <a class="footer_item" href="javascript::void(0)">resume</a>
+
+
+{% if page.layout == 'post' or page.lang-ref == 'about' %}
+    {% assign posts=site.posts | where:"lang-ref", page.lang-ref | sort: 'lang' %}
+    {% if posts.size == 0 %}
+        {% assign posts=site.pages | where:"lang-ref", page.lang-ref | sort: 'lang' %}
+    {% endif %}
+    {% if posts.size > 1 %}
+    <footer class="lang-options">
+        <em>Read this page in a different language:</em>
+        {% for post in posts %}
+     <a href="{{ site.base-url }}{{ post.url }}" class="{{ post.lang }}" title="View in {{post.lang}}">{{ post.lang }}</a>
+        {% endfor %}
+    </footer>
+    {% endif %}
+{% endif %}
   <a class="footer_item" href="/feed.xml">rss</a>
   <span class="footer_item">&copy; {{ site.time | date: "%Y" }}</span>
   <small class="footer_copyright">

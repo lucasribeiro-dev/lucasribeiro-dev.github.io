@@ -2,15 +2,23 @@
   url: /
   external: false
 
+- title: about
+  url: /about/
+  external: false
+
 - title: archive
   url: /archive/
   external: false
 
-- title: about
-  url: /about/
+- title: tags
+  url: /tags/
   external: false # set true if you using external link, see below
 
-# Example:
-# - title: github
-#   url: https://github.com/piharpi/jekyll-klise
-#   external: true
+- title: langs
+  url: /langs/
+  external: false
+
+  # Example:
+  # - title: github
+  # url: https://github.com/piharpi/jekyll-klise
+  # external: true
